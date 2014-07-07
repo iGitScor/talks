@@ -55,8 +55,8 @@
 					<ol>
 						<span class="fragment highlight-green">
 							<li>Les bases de HTML</li>
-							<li>La mise en forme CSS</li>
 							<li>La mise en page</li>
+							<li>La mise en forme CSS</li>
 						</span>
 						
 						<li><hr /> TP : créer une page <hr /></li>
@@ -171,47 +171,41 @@
 					<h2>Structure d'une page HTML</h2>
 					<pre>
 						<code data-trim contenteditable>
-						&lt;!doctype html&gt;
-						&lt;html&gt;
-							&lt;head&gt;
-								&lt;title&gt;Titre du document&lt;/title&gt;
-								<!-- Autres balises de métadonnées -->
-							&lt;/head&gt;
-							&lt;body&gt;
-								<!-- Corps du document -->
-							&lt;/body&gt;
-						&lt;/html&gt;
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Titre du document&lt;/title&gt;
+        <!-- Autres balises de métadonnées -->
+    &lt;/head&gt;
+    &lt;body&gt;
+        <!-- Corps du document -->
+    &lt;/body&gt;
+&lt;/html&gt;
 						</code>
 					</pre>
 				</section>
 				
 				<section>
-					<section data-background="#007777">
-						<h2>La mise en forme CSS</h2>
-						<p>
-							<a href="#" class="navigate-down">CSS c'est quoi ?</a>
-						</p>
-					</section>
 					<section>
-						<h2>Le CSS c'est quoi ?</h2>
-						<p>CSS (Cascading Style Sheets : feuilles de style en cascade) est un
-						langage informatique qui sert à décrire la présentation des
-						documents HTML et XML.</p>
-						<p class="fragment">Les standards définissant CSS sont publiés par le World Wide
-						Web Consortium (W3C). Introduit au milieu des années 1990, CSS
-						devient couramment utilisé dans la conception de sites web et bien
-						pris en charge par les navigateurs web dans les années 2000.</p>
+						<h2>HTML, un langage de balises</h2>
+						<p>Une page HTML est d'abord défini par une structure standardisée, vu précédemment.</p>
+						<p class="fragment">D'autres éléments peuvent ensuite être ajoutés</p>
 					</section>
-					<!--<section>
-						<h2>Le CSS fait quoi ?</h2>
-						<p>Il permet de créer des documents interopérables avec des équipements
-						très variés de manière conforme aux exigences de l’accessibilité du web.</p>
-					</section>-->
-				</section>
-				
-				<section>
-					<h2>CSS, les règles du langage</h2>
-					<img height="350" src="assets/css_anatomie.dib" alt="Anatomie">
+					
+					<section>
+						<ul>
+							<li class="fragment highlight-current-blue">Des titres (h1, h2, h3, h4, h5, h6)</li>
+							<li class="fragment highlight-current-blue">Des paragraphes (p)</li>
+							<li class="fragment highlight-current-blue">Des liens (a)</li>
+							<li class="fragment highlight-current-blue">Des images (img)</li>
+							<li class="fragment highlight-current-blue">Des listes (ul, ol)</li>
+							<li class="fragment highlight-current-blue">Des tableaux (table)</li>
+						</ul>
+						
+						<pre>
+							<code data-trim contenteditable>Exemple ...</code>
+						</pre>
+					</section>
 				</section>
 				
 				<section>
@@ -251,8 +245,212 @@
 							<a href="#" class="navigate-down">Créer une page</a>
 						</p>
 					</section>
+					
+					<section>
+						<h2>La page HTML</h2>
+						<p>
+							Créer votre première page
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La page HTML</h2>
+						<pre>
+							<code data-trim contenteditable>
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ma premi&egrave;re page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La structure : la partie contenu</h2>
+						<p>Veuillez créer les éléments suivants :</p>
+						<ul>
+							<li>Une entête</li>
+							<li>Un menu de navigation dans l'entête</li>
+							<li>Un article composé d' et des paragraphes</li>
+							<li>Un pied de page</li>
+						</ul>
+					</section>
+					
+					<section data-background="green">
+						<h2>La page HTML</h2>
+						<pre>
+							<code data-trim contenteditable>
+&lt;body&gt;
+    &lt;div id="bloc_page"&gt;
+        &lt;header&gt;
+		&lt;/header&gt;
+		
+		&lt;section&gt;
+            &lt;article&gt;
+            &lt;/article&gt;
+		&lt;/section&gt;
+		
+		&lt;footer&gt;
+		&lt;/footer&gt;
+    &lt;/div>
+&lt;/body&gt;
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La structure : l'entête</h2>
+						<p>Dans l'entête, créez les élements :</p>
+						<ul>
+							<li>Un logo</li>
+							<li>Un titre</li>
+							<li>Un sous titre</li>
+						</ul>
+						<p>Dans le menu de navigation créez une liste de lien</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La page HTML</h2>
+						<pre>
+							<code data-trim contenteditable>
+&lt;header&gt;
+    &lt;div id="titre_principal"&gt;
+        &lt;img src="images/html-css.png" alt="Logo de HTML" id="logo" /&gt;
+        &lt;h1&gt;Développement Web&lt;/h1&gt;
+        &lt;h2&gt;De HTML à Javascript : les bases&lt;/h2&gt;
+    &lt;/div&gt;
+	
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Formation&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;CV&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La structure : l'article</h2>
+						<p>Dans la partie concernant l'article, créez les élements :</p>
+						<ul>
+							<li>Un titre : composé d'une image et du titre</li>
+							<li>Des paragraphes</li>
+						</ul>
+					</section>
+					
+					<section data-background="green">
+						<h2>La page HTML</h2>
+						<pre>
+							<code data-trim contenteditable>
+&lt;section&gt;
+    &lt;article&gt;
+        &lt;h1&gt;&lt;img src="images/newspaper.png" alt="Catégorie article" class="ico_categorie" /&gt;Je suis du contenu HTML&lt;/h1&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum luctus elit eu libero ultrices id fermentum sem sagittis. Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras laoreet molestie odio, consequat consequat velit commodo eu. Integer vitae lectus ac nunc posuere pellentesque non at eros. Suspendisse non lectus lorem.&lt;/p&gt;
+        &lt;p&gt;Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucibus. Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.&lt;/p&gt;
+        &lt;p&gt;Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La structure : le pied de page</h2>
+						<p>Dans la partie concernant le pied de page, créez un bloc (qui sera centré au milieu de la page) avec</p>
+						<ul>
+							<li>Un titre : le nom du bloc</li>
+							<li>Des images affichées les unes à côtés des autres</li>
+						</ul>
+					</section>
+				
+					<section data-background="green">
+						<h2>La page HTML</h2>
+						<pre>
+							<code data-trim contenteditable>
+&lt;footer&gt;
+    &lt;div id="mes_projets"&gt;
+        &lt;h1&gt;Mes projets&lt;/h1&gt;
+        &lt;p&gt;
+            &lt;img src="images/photo1.jpg" alt="Photographie" /&gt;
+            &lt;img src="images/photo2.jpg" alt="Photographie" /&gt;
+            &lt;img src="images/photo3.jpg" alt="Photographie" /&gt;
+            &lt;img src="images/photo4.jpg" alt="Photographie" /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+							</code>
+						</pre>
+					</section>
 				</section>
-
+				
+								
+				<section>
+					<section data-background="#007777">
+						<h2>La mise en forme CSS</h2>
+						<p>
+							<a href="#" class="navigate-down">CSS c'est quoi ?</a>
+						</p>
+					</section>
+					<section>
+						<h2>Le CSS c'est quoi ?</h2>
+						<p>CSS (Cascading Style Sheets : feuilles de style en cascade) est un
+						langage informatique qui sert à décrire la présentation des
+						documents HTML et XML.</p>
+						<p class="fragment">Les standards définissant CSS sont publiés par le World Wide
+						Web Consortium (W3C). Introduit au milieu des années 1990, CSS
+						devient couramment utilisé dans la conception de sites web et bien
+						pris en charge par les navigateurs web dans les années 2000.</p>
+					</section>
+					<!--<section>
+						<h2>Le CSS fait quoi ?</h2>
+						<p>Il permet de créer des documents interopérables avec des équipements
+						très variés de manière conforme aux exigences de l’accessibilité du web.</p>
+					</section>-->
+				</section>
+				
+				<section>
+					<h2>CSS, les règles du langage</h2>
+					<img height="350" src="assets/css_anatomie.dib" alt="Anatomie">
+				</section>
+				
+				<section>
+					<section data-background="darkred">
+						<h2>Travaux pratiques</h2>
+						<p>
+							<a href="#" class="navigate-down">Ajouter du style</a>
+						</p>
+					</section>
+					
+					<section>
+						<h2>La page HTML</h2>
+						<p>
+							Créer votre fichier css (vide) et insérer le dans la page html
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La page HTML</h2>
+						<pre>
+							<code data-trim contenteditable>
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;        
+    &lt;title&gt;Ma première page&lt;/title&gt;
+&lt;/head&gt;
+							</code>
+						</pre>
+					</section>
+				</section>
+				
+				
+				
 				<!--<section data-markdown>
 					<script type="text/template">
 						## Markdown support
