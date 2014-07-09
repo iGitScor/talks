@@ -1,10 +1,10 @@
 ﻿/* Eléments principaux de la page */
 
-body
+/*body
 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
-}
+}*/
 
 #bloc_page
 {
@@ -25,11 +25,6 @@ header
     background: url('images/separateur.png') repeat-x bottom;
 }
 
-#titre_principal
-{
-    display: inline-block;
-}
-
 header h1
 {
     font-size: 2.5em;
@@ -38,7 +33,7 @@ header h1
 
 #logo, header h1
 {
-    display: inline-block;
+    display: inline;
     margin-bottom: 0px;
 }
 
@@ -53,7 +48,6 @@ header h2
 
 nav
 {
-    display: inline-block;
     width: 740px;
     text-align: right;
 }
@@ -65,7 +59,7 @@ nav ul
 
 nav li
 {
-    display: inline-block;
+    display: inline;
     margin-right: 15px;
 }
 
@@ -85,7 +79,7 @@ nav a:hover
 
 /* Bannière */
 
-#banniere_image
+/*#banniere_image
 {
     margin-top: 15px;
     height: 200px;
@@ -105,21 +99,20 @@ nav a:hover
     height: 33px;
     padding-top: 15px;
     padding-left: 4px;
-    background-color: rgb(24,24,24); /* Pour les anciens navigateurs */
-    background-color: rgba(24,24,24,0.8);
+    background-color: rgb(24,24,24);*/ /* Pour les anciens navigateurs */
+    /*background-color: rgba(24,24,24,0.8);
     color: white;
     font-size: 0.8em;
 }
 
 #banniere_description a {
 	color: white;
-}
+}*/
 
 /* Corps */
 
 article, aside
 {
-    display: inline-block;
     vertical-align: top;
     text-align: justify;
 }
@@ -141,7 +134,7 @@ article p
     font-size: 0.8em;
 }
 
-aside
+/*aside
 {
     position: relative;
     width: 235px;
@@ -168,7 +161,7 @@ aside
 aside img
 {
     margin-right: 5px;
-}
+}*/
 
 /* Footer */
 

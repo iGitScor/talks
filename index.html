@@ -56,13 +56,13 @@
 						<span class="fragment highlight-green">
 							<li>Les bases de HTML</li>
 							<li>La mise en page</li>
+							<li>Les fondamentaux de HTML5</li>
 							<li>La mise en forme CSS</li>
 						</span>
 						
 						<li><hr /> TP : créer une page <hr /></li>
 						
 						<li>Les bases du Javascript</li>
-						<li>Modeler vos pages Web</li>
 						<li>Javascript et HTML5</li>
 						
 						<li><hr /> TP : dynamiser votre page <hr /></li>
@@ -447,9 +447,198 @@
 							</code>
 						</pre>
 					</section>
+					
+					<section>
+						<h2>La feuille de style</h2>
+						<p>
+							La première étape consiste à spécifier une taille pour notre page. Nous allons pour cela utiliser la balise &lt;div id="bloc_page"&gt;
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La feuille de style</h2>
+						<pre>
+							<code data-trim contenteditable>
+#bloc_page
+{
+    width: 900px;
+    margin: auto; /* Permet de centrer la page */
+}
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La feuille de style</h2>
+						<p>
+							La seconde étape à mettre en place le style du header.
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La feuille de style</h2>
+						<pre>
+							<code data-trim contenteditable>
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+}
+
+header h1
+{
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo, header h1
+{
+    display: inline;
+    margin-bottom: 0px;
+}
+
+header h2
+{
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La feuille de style</h2>
+						<p>
+							Nous allons maintenant appliquer un style au menu de navigation.
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La feuille de style</h2>
+						<pre>
+							<code data-trim contenteditable>
+nav
+{
+    width: 740px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+}
+
+nav li
+{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px; /* Espace le soulignement */
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La feuille de style</h2>
+						<p>
+							Nous allons appliquer un style au contenu principal.
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La feuille de style</h2>
+						<pre>
+							<code data-trim contenteditable>
+article, aside
+{
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 625px;
+    margin-right: 15px;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+							</code>
+						</pre>
+					</section>
+					
+					<section>
+						<h2>La feuille de style</h2>
+						<p>
+							Pour finir, nous allons organiser le pied de page.
+						</p>
+					</section>
+					
+					<section data-background="green">
+						<h2>La feuille de style</h2>
+						<pre>
+							<code data-trim contenteditable>
+footer
+{
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+#mes_projets
+{
+    width: 35%;
+	margin: auto;
+}
+
+#mes_projets img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+							</code>
+						</pre>
+					</section>
 				</section>
 				
-				
+				<section>
+					<section data-background="#007777">
+						<h2>Les bases du Javascript</h2>
+						<p>
+							<a href="#" class="navigate-down">Rendre les pages intéractives</a>
+						</p>
+					</section>
+				</section>
 				
 				<!--<section data-markdown>
 					<script type="text/template">
