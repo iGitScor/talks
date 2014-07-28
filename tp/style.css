@@ -79,18 +79,13 @@ nav a:hover
 
 /* Bannière */
 
-/*#banniere_image
+#banniere_image
 {
-    margin-top: 15px;
-    height: 200px;
-    border-radius: 5px;
-    background: url('images/colors.jpg') no-repeat;
-    position: relative;
-    box-shadow: 0px 4px 4px #1c1a19;
-    margin-bottom: 25px;
+    margin: auto;
+    width: 400px;
 }
 
-#banniere_description
+/*#banniere_description
 {
     position: absolute;
     bottom: 0;
@@ -115,6 +110,18 @@ article, aside
 {
     vertical-align: top;
     text-align: justify;
+    display: table-cell;
+}
+
+aside {
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+aside input {
+    margin-bottom: 10px;
 }
 
 article
@@ -129,39 +136,6 @@ article
     margin-right: 8px;
 }
 
-article p
-{
-    font-size: 0.8em;
-}
-
-/*aside
-{
-    position: relative;
-    width: 235px;
-    background-color: #706b64;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-    font-size: 0.9em;
-}
-
-#fleche_bulle
-{
-    position: absolute;
-    top: 100px;
-    left: -12px;
-}
-
-#photo_profile
-{
-    text-align: center;
-}
-
-aside img
-{
-    margin-right: 5px;
-}*/
 
 /* Footer */
 
@@ -181,10 +155,11 @@ footer h1
     font-size: 1.1em;
 }
 
-#mes_projets
+footer div
 {
-    width: 35%;
-	margin: auto;
+    width: 33.33%;
+	float: left;
+    margin: auto;
 }
 
 #mes_projets img
@@ -192,3 +167,19 @@ footer h1
     border: 1px solid #181818;
     margin-right: 2px;
 }
+
+#css3
+{
+    transition-property: background-color, color;    
+    transition-duration: 3s;
+    
+    background-color: white;
+}
+
+#css3:hover
+{
+   background-color: rgba(255,0,0,0.4);
+   color: rgba(0,0,0,0.5);
+}
+   
+#css3 {text-shadow: 0.1em 0.1em 0.05em #333}

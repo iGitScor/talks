@@ -8,6 +8,9 @@
 		<!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/monscript.js"></script>
 		
         <title>Ma première page</title>
     </head>
@@ -30,11 +33,13 @@
                 </nav>
             </header>
             
-            <!--<div id="banniere_image">
-                <div id="banniere_description">
-                    <a href="#">Formation débutant pour le développement Web</a>
-                </div>
-            </div>-->
+            <div id="banniere_image">
+                <video width="400" height="222" controls="controls">
+                  <source src="../assets/mov.mov" type="video/mp4" />
+                  <source src="../assets/webm.webm" type="video/webm" />
+                  Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+                </video>
+            </div>
             
             <section>
                 <article>
@@ -43,16 +48,20 @@
                     <p>Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucibus. Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.</p>
                     <p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.</p>
                 </article>
-                <!--<aside>
-                    <h1>À propos de l'auteur</h1>
-                    <img src="images/bulle.png" alt="" id="fleche_bulle" />
-                    <p id="photo_profile"><img src="images/flipflop.png" alt="Photo de profile" /></p>
-                    <p>Sébastien Correaud</p>
-                    <p>Développeur Web.</p>
-                </aside>-->
+                <aside>
+                    <form>
+                        <input type="text" required="required" pattern="[A-F][0-9]{5}"/>
+                        <input type="date" required="required"/>
+                        <textarea></textarea>
+                        <input type="submit" />
+                    </form>
+                </aside>
             </section>
             
             <footer>
+                <div id="css3">
+                    <kbd>Survol de souris</kbd>
+                </div>
                 <div id="mes_projets">
                     <h1>Mes projets</h1>
                     <p>
@@ -61,6 +70,10 @@
 						<img src="images/photo3.jpg" alt="Photographie" />
 						<img src="images/photo4.jpg" alt="Photographie" />
 					</p>
+                    <legend></legend>
+                </div>
+                <div id="geolocalisation">
+                
                 </div>
             </footer>
         </div>
